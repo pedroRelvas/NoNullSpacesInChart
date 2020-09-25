@@ -1,2 +1,2 @@
-# NoNullSpacesInChart
+# RemoveWhiteSpaceInChartJSWhenValueIsNull
 Created with CodeSandbox
