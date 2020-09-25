@@ -8,8 +8,8 @@ export default function App() {
   const dataone = [1, 2, 5, 4, 2];
   const datatwo = [2, 2, 3, 4, 5];
   const datathree = [2, 3, 3, 2, 4];
-  const datafour = [null, null, null, null, null];
-  const datafive = [null, null, null, null, null];
+  const datafour = [null, null, 4, null, null];
+  const datafive = [null, 2, null, null, null];
 
   useEffect(() => {
     const ctx = document.getElementById("myChart");
@@ -26,9 +26,7 @@ export default function App() {
             borderWidth: 1,
             borderColor: "#F3C200",
             hoverBackgroundColor: "#F3C200",
-            hoverBorderColor: "#7d6505",
-            categoryPercentage: 0.5,
-            barPercentage: 1.0
+            hoverBorderColor: "#7d6505"
           },
           {
             label: "Prova2",
@@ -79,11 +77,11 @@ export default function App() {
           ],
           xAxes: [
             {
-              display: false,
+              /* display: false,
               offset: true,
               gridLines: {
                 offsetGridLines: true
-              }
+              } */
             }
           ]
         }
